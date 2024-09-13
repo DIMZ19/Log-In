@@ -1,0 +1,218 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e2e2e2;
+    background: url('BG.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(80, 80, 80, 0.2);
+    max-width: 800px;
+    width: 100%;
+    color: white;
+    max-width: 1000px;
+}
+
+.left-side {
+    width: 50%;
+    position: relative;
+}
+
+.left-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.right-side {
+    width: 50%;
+    padding: 30px;
+}
+
+.right-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.right-side p {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+.form-group .toggle-password {
+    position: absolute;
+    right: -10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #aaa; 
+}
+
+.form-group .toggle-password:hover {
+    color: #fff; 
+}
+
+
+.password-container input {
+    width: calc(100% - 40px); 
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #aaa; 
+}
+
+.toggle-password:hover {
+    color: #fff; 
+}
+
+button {
+    background-color: #046e0a;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #058d0c;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-button {
+    background-color: #b1700e;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.social-button i {
+    margin-right: 5px;
+}
+
+.social-button:hover {
+    background-color: #eea300;
+}
+
+#image-carousel {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+#image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#image-carousel img.active {
+    opacity: 1;
+}
+
+#image-carousel .slide {
+    display: none;
+}
+
+#image-carousel .slide.active {
+    display: block;
+}
+
+#image-carousel .prev,
+#image-carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#image-carousel .prev {
+    left: 10px;
+}
+
+#image-carousel .next {
+    right: 10px;
+}
